@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { Grid, Typography, Paper } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Grid, Typography, Paper, makeStyles } from "@material-ui/core";
 
-import { SocketContext } from "../components/SocketContext";
+import { SocketContext } from "./SocketContext";
 
 const useStyles = makeStyles((theme) => ({
   video: {
@@ -25,9 +24,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const VideoPlayer = () => {
-  const { myVideo, name, userVideo, callAccepted, callEnded, stream, call } =
+  const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } =
     useContext(SocketContext);
   const classes = useStyles();
+
   return (
     <Grid container className={classes.gridContainer}>
       {stream && (

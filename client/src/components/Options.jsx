@@ -7,12 +7,7 @@ import {
   Container,
   Paper,
 } from "@material-ui/core";
-import {
-  Assignement,
-  Assignment,
-  Phone,
-  PhoneDisabled,
-} from "@material-ui/icons";
+import { Assignment, Phone, PhoneDisabled } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
